@@ -95,15 +95,52 @@ a {
         font-size: 28px;
     }
 }
+.hero {
+    background: url('header.jpg') center 30%/cover no-repeat;
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
 
+.overlay {
+    background: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.profile-pic {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
 </style>
 </head>
 <body>
 
-<header>
-    <h1>Sam Judy</h1>
-    <p>Marketing Professional | Leadership & Performance-Driven Mindset</p>
-    <p>Greenville, SC | (864) 477-8622 | Samuelmjudy@gmail.com</p>
+<header class="hero">
+    <div class="overlay">
+        <img src="headshot.jpg" alt="Sam Judy Headshot" class="profile-pic">
+        <h1>Sam Judy</h1>
+        <p class="subtitle">Marketing & Sales Professional</p>
+        <p>Greenville, SC | Samuelmjudy@gmail.com</p>
+    </div>
 </header>
 
 <div class="container">
